@@ -5,7 +5,7 @@ This repository maintain standard structure and code best practices for React Na
 ## Files and Folders
 
 <p style="margin-top:20px">
-    <img src="./readMeAssets/files.png" width="50%"/>
+    <img src="./readmeAssets/files.png" width="50%"/>
 </p>
 
 ## Naming Conventions
@@ -25,7 +25,6 @@ This repository maintain standard structure and code best practices for React Na
   1. const variable = 'test';
   2. let variableBoolean = true;
 
-<br />
 
 ## Putting imports in an order
 - Putting imports in an order
@@ -38,7 +37,6 @@ This repository maintain standard structure and code best practices for React Na
   <br />
 Each kind should be separated by an empty line. This makes your imports clean and easy to understand for all the components, 3rd-party libraries, and etc.
 
-<br />
 
 ## Layout Conventions
 - Always end a statement with a semicolon.
@@ -57,7 +55,6 @@ Each kind should be separated by an empty line. This makes your imports clean an
         setName(null);
       }
 
-<br />
 
 ## Commenting Conventions
 - Place the comment on a separate line, not at the end of a line of code.
@@ -66,21 +63,18 @@ Each kind should be separated by an empty line. This makes your imports clean an
 - Insert one space between the comment delimiter (//) and the comment text.
 - Attach comments to code only where necessary.
 
-<br />
 
 ## Don’t Repeat Yourself
   One of the basic principles of software development is Don’t Repeat Yourself. We must not write the same piece of code twice. Whenever you write the same piece of code twice, you must try to refactor it into something reusable, even if not completely.
 
   You can create your own reusable components. For example, if your app contains multiple input fields, you can create a reusable `<TextInput>` component and use it across any screen within your app. Not only input fields, if your app contains multiple buttons, but you can also create a reusable `<Button>` component and use it anywhere within your app. Likewise, you can create any number of reusable components based on your app architecture.
 
-<br />
 
 ## Avoid Inline Styling
   Using inline stylings is much harder to maintain if a change is to be made there will be hundreds of places in the code you will have to search and change unless all styles are clearly defined with unique class names in a CSS stylesheet. For any property you want to change, you would have to simply modify the corresponding class name properties in the stylesheet, all the div/view that use the class name will be affected.
 
   A well-defined stylesheet is extremely helpful while building complex React Native apps. Use React Native Stylesheet object to add styles specific to a certain component.
 
-<br />
 
 ## Exception Handling
   One of the worst user experiences is using a mobile application that crashes with errors that aren’t handled gracefully. So, exception handling plays an important role in making your app run smoothly.
@@ -101,29 +95,24 @@ Each kind should be separated by an empty line. This makes your imports clean an
   }
   ```
 
-<br />
 
 ## Always Perform Both Local and Server Validations
 
   Although, there are some validations or tests which only the server can validate, such as if the entered username or password exists in the database or if the entered email exists in the database. But it is a best practice that you always implement as much client validation as possible, such as entering the proper email format, empty field validation and also a minimum or maximum number of characters required. So, it is always preferable to perform both local and server validations.
 
-<br />
 
 ## Remove console logs in the release build
 
   Having many console.log statements can slow your app down, especially if you are using logging libraries such as redux-logger. Be sure to disable all logs (manually or with a script) when doing a release build.
 
-<br />
 
 ## Use a linter to make your code easier to review
   Follow strict linting rules. This in turn helps you write clean, consistent code.
 
-<br />
 
 ## Review your code before creating a pull/merge request.
   Review your code at least once before creating a pull or merge request
 
-<br />
 
 ## Basic Rules
 
