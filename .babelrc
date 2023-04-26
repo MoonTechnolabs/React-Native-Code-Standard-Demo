@@ -1,0 +1,32 @@
+{
+  "env": {
+    "production": {
+      "plugins": [
+        "transform-remove-console"
+      ]
+    }
+  },
+  "extends": "./babel.config.js",
+  "plugins": [
+    [
+      "module-resolver",
+      {
+        "root": [
+          "./src"
+        ],
+        "alias": {
+          "src": "./src",
+          "assets": "./src/assets",
+          "common": "./src/common",
+          "components": "./src/components",
+          "interfaces": "./interfaces",
+          "navigations": "./src/navigations",
+          "screens": "./src/screens",
+          "services": "./src/services",
+          "store": "./src/store",
+          "utils": "./src/utils"
+        }
+      }
+    ]
+  ]
+}
